@@ -206,6 +206,7 @@ checkVersion().then((enable) => {
     wx.getRealtimeLogManager().info('game starting', bootinfo);
     wx.getLogManager().info('game starting', bootinfo);
     console.info('game starting', bootinfo);
+    console.info('game starting', window.innerWidth + ":" + window.innerHeight);
 
     // 默认上报小游戏实时日志与用户反馈日志(所有error日志+小程序框架异常)
     wx.onError((result) => {
